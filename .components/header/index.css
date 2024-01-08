@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Jura:wght@300;400;500;600;700&display=swap');
+
+.header-link {
+  font-size: 1rem;
+  padding: 1rem 0.5rem;
+  position: relative;
+  color: #000;
+  background-color: transparent;
+}
+
+.header-link:hover {
+  background-color: transparent;
+  color: #7567ff;
+}
+
+.header-link::after {
+  content: '';
+  width: 100%;
+  height: 2rem;
+  background-color: transparent;
+  position: absolute;
+  top: 90%;
+  left: 0;
+}
+
+.menu-visible {
+  visibility: visible;
+  opacity: 1;
+  transform: translate(-50%, 0);
+  transition: visibility 0s ease-in-out, opacity 0.1s ease-in-out, transform 0.3s;
+}
+
+.menu-hidden {
+  visibility: hidden;
+  opacity: 0;
+  transform: translate(-50%, -100px);
+ transition: visibility 0s ease-in-out 0.1s, opacity 0.1s ease-in-out 0.1s, transform 0.3s linear;
+}
+
+.cta-secondary {
+  color: #7567ff;
+  background-color: transparent;
+}
+
+.cta-primary {
+  color: #fff;
+  background-color: #7567ff;
+}
+
+.cta-secondary:hover {
+  color: #fff;
+  background-color: #7567ff;
+}
+
+.banner-title {
+  font-size: 0.9rem;
+  margin-top: 1rem;
+}
+
+.banner-title:hover {
+  background-color: transparent;
+  color: #7567ff;
+}
+
+
+.menu-links:hover {
+  transition: all 0.3s ease-out;
+}
+.menu-links:hover {
+  background-color: #fbf6ff;
+}

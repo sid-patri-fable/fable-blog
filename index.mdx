@@ -1,0 +1,15 @@
+---
+documentTitle: Fable Blog
+---
+
+import AllPosts from './.components/AllPosts'
+import Banner from './.components/Banner'
+
+<Banner config={props.config} height={'60vh'}>
+  <div style={{ maxWidth: '546px' }}>
+    # Blog
+    Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi anim cupidatat 
+  </div>
+  
+  <AllPosts manifest={props.manifest} config={props.config} />
+</Banner>
