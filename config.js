@@ -1,4 +1,4 @@
-import Header from "./.components/header/Header.jsx"
+import Header from "./.components/header/header.jsx"
 
 module.exports = {
   version: "1.0.0",
