@@ -7,7 +7,7 @@ const getLatestPosts = (manifest) => {
   while (queue.length > 0) {
     const node = queue.shift()
 
-    if (node.nodeType === 'file' && node.ext === '.mdx') {
+    if (node.nodeType === 'file' && node.ext === '.mdx' && node.nodeName !== 'index.mdx') {
       latestPosts.push({ ...node.frontmatter, link: node.pathName })
     }
 
@@ -18,6 +18,7 @@ const getLatestPosts = (manifest) => {
 }
 
 export default function AllPosts(props) {
+  console.log(props)
   const latestPosts = getLatestPosts(props.manifest)
   const borderColor = ['#ff5cc5', '#37b8ff', '#c24ce3', '#ffc901']
 
