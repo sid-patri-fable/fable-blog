@@ -3,7 +3,7 @@ import Header from "./.components/header/Header.jsx"
 module.exports = {
   version: "1.0.0",
   urlMapping: {
-    globalPrefix: "/",
+    globalPrefix: "/blog",
     entries: {},
   },
   props: {
