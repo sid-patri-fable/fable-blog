@@ -1,4 +1,5 @@
 {
   "site": "docs.sharefable.com",
-  "prodBranch": "main"
+  "prodBranch": "main",
+  "originPath": "/blog"
 }
