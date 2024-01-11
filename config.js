@@ -16,7 +16,7 @@ module.exports = {
       navLinks: {
         alignment: 'right',
         links: [
-          { title: 'Product', url: 'https://sharefable.com' },
+          { title: 'Product', url: 'https://sharefable.com/products' },
           {
             title: 'Solutions',
             subtitle: 'The ultimate demo platform for all your GTM needs',
@@ -25,25 +25,25 @@ module.exports = {
                 title: 'Marketing',
                 subtitle: 'Increase conversions from your existing funnel',
                 logo: 'https://sharefable.com/logo/marketing-logo.svg',
-                url: 'https://sharefable.com'
+                url: 'https://sharefable.com/solutions/marketing'
               },
               {
                 title: 'Sales',
                 subtitle: 'Create deal-winning demos every single time',
                 logo: 'https://sharefable.com/logo/sales-logo.svg',
-                url: 'https://sharefable.com'
+                url: 'https://sharefable.com/solutions/sales'
               },
               {
                 title: 'Presales',
                 subtitle: 'Scale demo environments & personalize in minutes',
                 logo: 'https://sharefable.com/logo/presales-logo.svg',
-                url: 'https://sharefable.com'
+                url: 'https://sharefable.com/solutions/presales'
               },
               {
                 title: 'Partnerships',
                 subtitle: 'Enable partners and skyrocket channel sales',
                 logo: 'https://sharefable.com/logo/partnerships-logo.svg',
-                url: 'https://sharefable.com'
+                url: 'https://sharefable.com/solutions/partnerships'
               },
             ],
             banner: {
@@ -52,7 +52,7 @@ module.exports = {
               description: 'Our CEO was feature in Tekpon\'s podcast where he shared valuable insights on... well... how to close more deals!',
               cta: {
                 title: 'Give it a listen',
-                url: 'https://sharefable.com'
+                url: 'https://tekpon.com/podcasts/create-personalized-product-demos-to-close-more-deals/'
               }
             }
           },
@@ -64,19 +64,19 @@ module.exports = {
                 title: 'Fable Champs',
                 subtitle: 'How hotshot SaaS companies achieved hypergrowth',
                 logo: 'https://sharefable.com/logo/fable-champs-logo.svg',
-                url: 'https://sharefable.com'
+                url: 'https://sharefable.com/growth-stories'
               },
               {
                 title: 'Fable Untold',
                 subtitle: 'The small corner of the internet for inspiring growth stories',
                 logo: 'https://sharefable.com/logo/fables-untold-logo.svg',
-                url: 'https://sharefable.com'
+                url: 'https://sharefable.com/podcast/mastering-b2b-demand-generation'
               },
               {
                 title: 'E-books',
                 subtitle: 'Handy resources that all GTM teams will love',
                 logo: 'https://sharefable.com/logo/e-books-logo.svg',
-                url: 'https://sharefable.com'
+                url: 'https://sharefable.com/ebooks'
               }
             ],
             banner: {
@@ -85,11 +85,11 @@ module.exports = {
               description: 'Our CEO was feature in Tekpon\'s podcast where he shared valuable insights on... well... how to close more deals!',
               cta: {
                 title: 'Give it a listen',
-                url: 'https://sharefable.com'
+                url: 'https://tekpon.com/podcasts/create-personalized-product-demos-to-close-more-deals/'
               }
             }
           },
-          { title: 'Pricing', url: 'https://sharefable.com' },
+          { title: 'Pricing', url: 'https://sharefable.com/pricing' },
         ]
       },
       cta: {
@@ -100,12 +100,12 @@ module.exports = {
         {
           type: 'secondary',
           title: 'Start 14 days free trial',
-          url: 'https://sharefable.com',
+          url: 'https://app.sharefable.com/login',
         },
         {
           type: 'primary',
           title: 'Get a demo',
-          url: 'https://sharefable.com',
+          url: 'https://sharefable.com/get-a-demo',
         }
       ]
     },
