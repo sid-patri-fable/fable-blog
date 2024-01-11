@@ -64,7 +64,7 @@ const Header = (props) => {
                   <li className='header-link-con' key={idx}>
                     <a
                       className='header-link'
-                      href="#"
+                      href={link.url}
                     >
                       {link.title}
                     </a>
