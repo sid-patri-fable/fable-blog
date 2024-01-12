@@ -1,4 +1,5 @@
 import Header from "./.components/header/Header.jsx"
+import TOC from "./.components/toc/index.jsx"
 
 module.exports = {
   version: "1.0.0",
@@ -162,6 +163,9 @@ module.exports = {
         },
       ]
     },
+    toc: {
+      show: false
+    }
   },
   theme: {
     colors: {
