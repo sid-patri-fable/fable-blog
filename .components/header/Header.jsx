@@ -125,6 +125,7 @@ const Header = (props) => {
                   }}
                   className={`${cta.type === 'secondary' ? 'cta-secondary' : 'cta-primary'}`}
                   href={cta.url}
+                  key={`${cta.url}-${idx}`}
                 >
                   {cta.title}
                 </a>

@@ -77,6 +77,12 @@ module.exports = {
                 subtitle: 'Handy resources that all GTM teams will love',
                 logo: 'https://sharefable.com/logo/e-books-logo.svg',
                 url: 'https://sharefable.com/ebooks'
+              },
+              {
+                title: 'Fable blog',
+                subtitle: 'Handy resources that all GTM teams will love',
+                logo: 'https://sharefable.com/logo/blog-logo.svg',
+                url: 'https://sharefable.com/ebooks'
               }
             ],
             banner: {
@@ -132,6 +138,7 @@ module.exports = {
             { title: 'Fable Champs', url: 'https://sharefable.com/growth-stories' },
             { title: 'Fable Untold', url: 'https://sharefable.com/podcast/mastering-b2b-demand-generation' },
             { title: 'E-books', url: 'https://sharefable.com/ebooks' },
+            { title: 'Fable blog', url: 'https://sharefable.com/blog' },
             { title: 'Privacy Policy', url: 'https://sharefable.com/privacy-policy' },
           ]
         },

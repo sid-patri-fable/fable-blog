@@ -35,11 +35,11 @@ export default function AllPosts(props) {
         }}
       >
         {latestPosts.map(((post, idx) => {
-          if (post.link === '/') return <></>
+          if (post.link === '/blog/') return <React.Fragment key={`${post.link}-${idx}`} />
           return (
             <a
               className='post-banner'
-              key={idx}
+              key={`${post.link}-${idx}`}
               href={post.link}
               style={{
                 backgroundColor: 'white',
