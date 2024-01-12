@@ -6,7 +6,7 @@ const TOC = (props) => {
     <div className='toc-con'>
       <p className='toc-title'>Table of Contents</p>
       <ul className='toc-list'>
-        {props.toc.map((content) => {
+        {props.toc?.map((content) => {
           return (
             <li
               style={{
