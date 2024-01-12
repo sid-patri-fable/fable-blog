@@ -1,0 +1,11 @@
+@media (max-width: 800px) {
+  .banner h1 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+
+  .banner-title-wrapper {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}

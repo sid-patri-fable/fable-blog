@@ -1,0 +1,36 @@
+.posts-con {
+  padding: 1rem;
+}
+
+.post-banner {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 1rem;
+}
+
+.post-img {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .post-banner {
+    flex-direction: row;
+    padding: 40px;
+    gap: 2rem;
+  }
+  .post-img {
+    width: 420px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .post-img {
+    width: 460px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .post-img {
+    width: auto;
+  }
+}

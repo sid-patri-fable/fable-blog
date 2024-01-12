@@ -1,18 +1,44 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import "./index.css"
 
 const Header = (props) => {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const handleToggleMenu = () => {
+    setMenuOpen(!menuOpen);
+
+    document.body.classList.toggle('no-scroll');
+  };
+
+  useEffect(() => {
+    return () => {
+      document.body.classList.remove('no-scroll');
+    };
+  }, []);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth > 992 && menuOpen) {
+        setMenuOpen(false)
+        document.body.classList.toggle('no-scroll');
+      }
+    }
+    window.addEventListener('resize', handleResize)
+    return () => {
+      window.removeEventListener('resize', handleResize)
+    };
+  }, [menuOpen]);
+
   return (
     <>
       <div
         style={{
-          padding: '1rem 3rem',
           backgroundColor: '#fbf6ff',
           position: 'sticky',
           top: '0',
           zIndex: '4',
           borderBottom: '1px solid #d0d0ff'
         }}
+        className='header-con'
       >
         <div
           style={{
@@ -35,12 +61,12 @@ const Header = (props) => {
               />
             </a>
           </h1>
-          <div>
+          <div className='menu-screen'>
             <ul
               style={{
                 display: 'flex',
                 alignItems: 'center',
-                gap: '1rem',
+                gap: '0.7rem',
                 fontSize: '0.9rem',
                 listStyleType: 'none',
                 padding: 0,
@@ -64,7 +90,7 @@ const Header = (props) => {
                   <li className='header-link-con' key={idx}>
                     <a
                       className='header-link'
-                      href={link.url}
+                      href="#"
                     >
                       {link.title}
                     </a>
@@ -73,9 +99,14 @@ const Header = (props) => {
               })}
             </ul>
           </div>
+          <div className={`hamburger-icon ${menuOpen ? 'open' : ''}`} onClick={handleToggleMenu}>
+            <div className="bar"></div>
+            <div className="bar"></div>
+            <div className="bar"></div>
+          </div>
           <div
+            className='cta-con'
             style={{
-              display: 'flex',
               alignItems: 'center',
               gap: '1.2rem'
             }}
@@ -102,9 +133,86 @@ const Header = (props) => {
           </div>
         </div>
       </div>
+      <div className={`overlay ${menuOpen ? 'open' : ''}`} onClick={handleToggleMenu}></div>
+      <div className={`menu-content ${menuOpen ? 'open' : ''}`}>
+        <div style={{ height: '100%', padding: '1rem' }}>
+          <div className="menu-content-mobile">
+            {props.props.navLinks.links.map((link) => (
+              <MenuItemMobile key={link.title} item={link} />
+            ))}
+          </div>
+        </div>
+      </div>
     </>
   )
 }
+
+const MenuItemMobile = (props) => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleToggleCollapsible = () => {
+    setIsOpen(!isOpen);
+  };
+
+  const hasSublinks = props.item.sublinks && props.item.sublinks.length > 0;
+
+  return (
+    <div
+      className={`menu-item ${hasSublinks ? 'collapsible' : ''} ${isOpen ? 'open' : ''}`}
+    >
+      {hasSublinks ? (
+        <div
+          className="menu-item-header"
+          onClick={handleToggleCollapsible}
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between'
+          }}
+        >
+          <span>
+            {props.item.title}
+          </span>
+          <img
+            src="https://uxwing.com/wp-content/themes/uxwing/download/arrow-direction/arrow-thin-chevron-bottom-icon.png"
+            style={{
+              height: '8px',
+              marginLeft: '5px',
+              transform: `${isOpen ? 'rotate(180deg)' : 'rotate(0)'}`,
+              transition: 'all 0.3s ease-out'
+            }}
+            alt="icon"
+          />
+        </div>
+      ) : (
+        <a
+          className="menu-item-header"
+          href={props.item.url}
+          style={{
+            width: '100%',
+            color: 'inherit',
+            display: 'block',
+            background: 'inherit'
+          }}
+        >
+          {props.item.title}
+        </a>
+      )}
+      {hasSublinks && (
+        <div className="menu-item-content">
+          {props.item.sublinks.map((sublink, idx) => (
+            <a href={sublink.url} key={`${sublink.title}-${idx}`} target="_blank" rel="noopener noreferrer" style={{ display: 'flex', alignItems: 'center', gap: '0.8rem' }}>
+              <img src={sublink.logo} alt="logo" />
+              <div key={sublink.title}>
+                {sublink.title}
+              </div>
+            </a>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+};
 
 function Menu(props) {
   const [showMenu, setShowMenu] = useState(false)
