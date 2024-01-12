@@ -75,7 +75,13 @@ The Latest Posts section will look like this:
 <img width="1465" alt="Screenshot 2024-01-10 at 10 59 22 AM" src="https://github.com/sid-patri-fable/fable-blog/assets/117962421/3dba1d3c-d10b-4e2f-bf2b-0161d603b663">
  
 
+-----------
+Some assets:
+Caret down white:
 
+
+
+![caret-down-md-svgrepo-com](https://github.com/sid-patri-fable/fable-blog/assets/117962421/ce8148a2-9141-43be-ba29-d04c908af25d)
 
 
 
