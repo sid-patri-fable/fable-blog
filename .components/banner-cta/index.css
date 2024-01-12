@@ -1,0 +1,51 @@
+.banner-cta-con {
+  background-color: #FF7450;
+  max-width: 18rem;
+  height: fit-content;
+  border-radius: 2.2rem;
+  position: sticky;
+  top: 144px;
+  display: none;
+}
+
+.banner-cta-content {
+  background-color: #FEDF64;
+  padding: 3rem 2rem;
+  border-radius: 2.2rem;
+}
+
+
+.banner-cta-content h3 {
+  background-color: #FEDF64;
+  font-weight: 500;
+  line-height: 1.3;
+  margin: 0;
+}
+
+.banner-cta-content p {
+  background-color: #FEDF64;
+  line-height: 1.4;
+  margin: 0;
+  font-size: 14px;
+  margin-top: 1rem;
+}
+
+.btn-banner-cta {
+  margin: 2rem;
+  font-size: 14px;
+  padding: 0.8rem 1.6rem;
+  background-color: rgb(117, 103, 255);
+  color: white;
+  border-radius: 1.6rem;
+  cursor: pointer;
+}
+.btn-banner-cta:hover {
+  color: white;
+  background-color: rgb(117, 103, 255);
+}
+
+@media screen and (min-width: 1200px) {
+  .banner-cta-con {
+    display: block;
+  }
+}

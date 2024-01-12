@@ -1,15 +1,15 @@
 import React from 'react'
+import TOC from './toc'
+import BannerCTA from './banner-cta/BannerCTA'
 
 export default function Content(props) {
   return (
-    <div
-      style={{
-        padding: '0rem 2rem',
-        maxWidth: '1024px',
-        margin: '0 auto'
-      }}
-    >
-      {props.children}
+    <div className='content-con'>
+      <TOC toc={props.toc} />
+      <div className='content'>
+        {props.children}
+      </div>
+      <BannerCTA />
     </div>
   )
 }
