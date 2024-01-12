@@ -1,11 +1,12 @@
 import React from 'react'
+import './index.css'
 
 export default function Promotion(props) {
   return (
     <div
+      className='promotion-con'
       style={{
         maxWidth: '1200px',
-        margin: '2rem auto',
         backgroundColor: props.config.theme.colors.primary,
         color: '#fff',
         padding: '5rem 2rem',

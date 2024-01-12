@@ -1,0 +1,28 @@
+.promotion-con {
+  margin: 2rem auto;
+}
+
+.content-con {
+  max-width: 1280px;
+  padding: 0rem;
+  margin: 0 auto;
+  display: flex;
+}
+
+.content {
+  padding: 0 2rem;
+  flex: 1;
+}
+
+@media (max-width: 1264px) {
+  .promotion-con {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .content-con {
+    padding: 0rem 2rem;
+  }
+}

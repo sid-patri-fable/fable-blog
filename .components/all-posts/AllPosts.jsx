@@ -1,4 +1,5 @@
 import React from 'react'
+import "./index.css"
 
 const getLatestPosts = (manifest) => {
   const latestPosts = []
@@ -7,7 +8,7 @@ const getLatestPosts = (manifest) => {
   while (queue.length > 0) {
     const node = queue.shift()
 
-    if (node.nodeType === 'file' && node.ext === '.mdx' && node.nodeName !== 'index.mdx') {
+    if (node.nodeType === 'file' && node.ext === '.mdx') {
       latestPosts.push({ ...node.frontmatter, link: node.pathName })
     }
 
@@ -18,12 +19,11 @@ const getLatestPosts = (manifest) => {
 }
 
 export default function AllPosts(props) {
-  console.log(props)
   const latestPosts = getLatestPosts(props.manifest)
   const borderColor = ['#ff5cc5', '#37b8ff', '#c24ce3', '#ffc901']
 
   return (
-    <div>
+    <div className='posts-con'>
       <div
         style={{
           display: 'flex',
@@ -35,37 +35,35 @@ export default function AllPosts(props) {
         }}
       >
         {latestPosts.map(((post, idx) => {
-          if (post.link === '/') return <></>
+          if (post.link === '/blog/') return <React.Fragment key={`${post.link}-${idx}`} />
           return (
             <a
-              key={idx}
+              className='post-banner'
+              key={`${post.link}-${idx}`}
               href={post.link}
               style={{
-                padding: '40px',
                 backgroundColor: 'white',
                 borderTopLeftRadius: '10px',
                 borderTopRightRadius: '10px',
                 borderBottom: `2px solid ${borderColor[idx % borderColor.length]}`,
-                display: 'flex',
-                gap: '2rem',
                 alignItems: 'center',
                 boxShadow: '0 6px 16px 0 rgba(0, 0, 0, 0.05)'
-
               }}
             >
               <img
                 src={post.bannerImg}
                 style={{
                   borderRadius: '10px',
-                  flex: '1',
                   maxHeight: '376px',
-                  width: 'auto'
                 }}
+                className='post-img'
               />
-              <div style={{
-                flex: '1',
-                height: '100%',
-              }}>
+              <div
+                style={{
+                  height: '100%',
+                }}
+                className='post-content'
+              >
                 <div style={{ textAlign: 'left', color: '#2c2c2c' }}>
                   <p style={{ color: '#747474' }}>{post.date}</p>
                   <h2>{post.title}</h2>

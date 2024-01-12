@@ -1,18 +1,44 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import "./index.css"
 
 const Header = (props) => {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const handleToggleMenu = () => {
+    setMenuOpen(!menuOpen);
+
+    document.body.classList.toggle('no-scroll');
+  };
+
+  useEffect(() => {
+    return () => {
+      document.body.classList.remove('no-scroll');
+    };
+  }, []);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth > 992 && menuOpen) {
+        setMenuOpen(false)
+        document.body.classList.toggle('no-scroll');
+      }
+    }
+    window.addEventListener('resize', handleResize)
+    return () => {
+      window.removeEventListener('resize', handleResize)
+    };
+  }, [menuOpen]);
+
   return (
     <>
       <div
         style={{
-          padding: '1rem 3rem',
           backgroundColor: '#fbf6ff',
           position: 'sticky',
           top: '0',
           zIndex: '4',
-          borderBottom: '1px solid #d0d0ff'
+          borderBottom: menuOpen ? '' : '1px solid #d0d0ff'
         }}
+        className='header-con'
       >
         <div
           style={{
@@ -35,12 +61,12 @@ const Header = (props) => {
               />
             </a>
           </h1>
-          <div>
+          <div className='menu-screen'>
             <ul
               style={{
                 display: 'flex',
                 alignItems: 'center',
-                gap: '1rem',
+                gap: '0.7rem',
                 fontSize: '0.9rem',
                 listStyleType: 'none',
                 padding: 0,
@@ -64,7 +90,7 @@ const Header = (props) => {
                   <li className='header-link-con' key={idx}>
                     <a
                       className='header-link'
-                      href={link.url}
+                      href="#"
                     >
                       {link.title}
                     </a>
@@ -73,9 +99,14 @@ const Header = (props) => {
               })}
             </ul>
           </div>
+          <div className={`hamburger-icon ${menuOpen ? 'open' : ''}`} onClick={handleToggleMenu}>
+            <div className="bar"></div>
+            <div className="bar"></div>
+            <div className="bar"></div>
+          </div>
           <div
+            className='cta-con'
             style={{
-              display: 'flex',
               alignItems: 'center',
               gap: '1.2rem'
             }}
@@ -91,9 +122,56 @@ const Header = (props) => {
                     borderRadius: '4rem',
                     fontSize: '1rem',
                     fontWeight: 500,
+                    lineHeight: '1',
                   }}
                   className={`${cta.type === 'secondary' ? 'cta-secondary' : 'cta-primary'}`}
                   href={cta.url}
+                  key={`${cta.url}-${idx}`}
+                >
+                  {cta.title}
+                </a>
+              )
+            })}
+          </div>
+        </div>
+      </div>
+      <div className={`overlay ${menuOpen ? 'open' : ''}`} onClick={handleToggleMenu}></div>
+      <div className={`menu-content ${menuOpen ? 'open' : ''}`}>
+        <div style={{ height: '100%', padding: '1rem' }}>
+          <div className="menu-content-mobile">
+            {props.props.navLinks.links.map((link) => (
+              <MenuItemMobile key={link.title} item={link} />
+            ))}
+          </div>
+          <div
+            className=''
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              flexDirection: 'row-reverse',
+              width: '100%',
+              gap: '1rem',
+            }}
+          >
+            {props.props.ctas.map((cta, idx) => {
+              return (
+                <a
+                  style={{
+                    border: '2px solid #7567ff',
+                    transition: 'all .2s ease-out',
+                    padding: '1rem 2rem',
+                    font: 'inherit',
+                    borderRadius: '4rem',
+                    fontSize: '1rem',
+                    fontWeight: 500,
+                    lineHeight: '1',
+                    display: 'block',
+                    flex: '1',
+                    textAlign: 'center'
+                  }}
+                  className={`${cta.type === 'secondary' ? 'cta-secondary' : 'cta-primary'}`}
+                  href={cta.url}
+                  key={`${cta.url}-${idx}`}
                 >
                   {cta.title}
                 </a>
@@ -105,6 +183,78 @@ const Header = (props) => {
     </>
   )
 }
+
+const MenuItemMobile = (props) => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleToggleCollapsible = () => {
+    setIsOpen(!isOpen);
+  };
+
+  const hasSublinks = props.item.sublinks && props.item.sublinks.length > 0;
+
+  return (
+    <div
+      className={`menu-item ${hasSublinks ? 'collapsible' : ''} ${isOpen ? 'open' : ''}`}
+    >
+      {hasSublinks ? (
+        <div
+          className="menu-item-header"
+          onClick={handleToggleCollapsible}
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between'
+          }}
+        >
+          <span>
+            {props.item.title}
+          </span>
+          <img
+            src="https://uxwing.com/wp-content/themes/uxwing/download/arrow-direction/arrow-thin-chevron-bottom-icon.png"
+            style={{
+              height: '8px',
+              marginLeft: '5px',
+              transform: `${isOpen ? 'rotate(360deg)' : 'rotate(270deg)'}`,
+              transition: 'all 0.3s ease-out'
+            }}
+            alt="icon"
+          />
+        </div>
+      ) : (
+        <a
+          className="menu-item-header"
+          href={props.item.url}
+          style={{
+            width: '100%',
+            color: 'inherit',
+            display: 'block',
+            background: 'inherit'
+          }}
+        >
+          {props.item.title}
+        </a>
+      )}
+      {hasSublinks && (
+        <div className="menu-item-content">
+          {props.item.sublinks.map((sublink, idx) => (
+            <a href={sublink.url} key={`${sublink.title}-${idx}`} target="_blank" rel="noopener noreferrer" style={{ display: 'flex', alignItems: 'center', gap: '0.8rem' }}>
+              <img src={sublink.logo} alt="logo" />
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem' }} key={sublink.title}>
+                <p style={{ margin: '0', lineHeight: '1', fontSize: '14px', fontWeight: 500 }}>
+                  {sublink.title}
+                </p>
+                <p style={{ margin: '0', lineHeight: '1', fontSize: '14px' }}>
+                  {sublink.subtitle}
+                </p>
+              </div>
+            </a>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+};
 
 function Menu(props) {
   const [showMenu, setShowMenu] = useState(false)
