@@ -6,6 +6,7 @@ module.exports = {
   urlMapping: {
     globalPrefix: "/blog",
     entries: {},
+    baseUrl: "https://sharefable.com/"
   },
   props: {
     header: {
