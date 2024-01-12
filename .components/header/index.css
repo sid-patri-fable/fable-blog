@@ -5,7 +5,7 @@ body.no-scroll {
 }
 
 .header-con {
-  padding: 1rem 2rem;
+  padding: 1.2rem 1.5rem;
 }
 
 .header-link {
@@ -49,17 +49,19 @@ body.no-scroll {
   color: #7567ff;
   background-color: transparent;
   transition: all 0.3s ease-out;
+  line-height: 1;
 }
 
 .cta-primary {
   color: #fff;
   background-color: #7567ff;
   transition: all 0.3s ease-out;
+  line-height: 1;
 }
 
 .cta-primary:hover {
-  background-color: transparent;
-  color: #7567ff;
+  background-color: #7567ff;
+  color: #fff;
 }
 
 .cta-secondary:hover {
@@ -97,7 +99,7 @@ body.no-scroll {
 }
 
 .bar {
-  width: 30px;
+  width: 24px;
   height: 3px;
   background-color: #7567ff;
   margin: 6px 0;
@@ -106,7 +108,7 @@ body.no-scroll {
 }
 
 .hamburger-icon.open .bar:nth-child(1) {
-  transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(45deg) translate(7px, 7px);
 }
 
 .hamburger-icon.open .bar:nth-child(2) {
@@ -114,7 +116,7 @@ body.no-scroll {
 }
 
 .hamburger-icon.open .bar:nth-child(3) {
-  transform: rotate(45deg) translate(-6px, -6px);
+  transform: rotate(-45deg) translate(6px, -6px);
 }
 
 .overlay {
@@ -139,12 +141,10 @@ body.no-scroll {
 .menu-content {
   display: block;
   position: fixed;
-  top: 0;
-  left: -100%;
+  top: -100%;
+  left: 0;
   height: 100%;
-  width: 60%;
-  min-width: 20rem;
-  max-width: 24rem;
+  width: 100%;
   background-color: rgb(251, 246, 255);
   box-shadow: -1px 0 10px rgba(0, 0, 0, 0.1);
   padding-top: 100px;
@@ -153,7 +153,7 @@ body.no-scroll {
 }
 
 .menu-content.open {
-  left: 0;
+  top: 0;
 }
 
 .menu-content-mobile {
@@ -162,9 +162,14 @@ body.no-scroll {
   gap: 0.2rem;
   overflow: hidden;
 }
+.menu-content-mobile {
+  height: 75%;
+}
 .menu-content-mobile .menu-item {
-  padding: 1rem;
-  border-bottom: 1px solid rgb(208, 208, 255);
+  font-size: 1.2rem;
+  padding: 2rem 0;
+  border-top: 0.8px solid #d0d0ff;
+  font-weight: 500;
 }
 
 .collapsible .menu-item-content  {
@@ -188,6 +193,18 @@ body.no-scroll {
   color: inherit;
   background: transparent;
   width: 100%;
+}
+
+@media only screen and (min-width: 576px) {
+  .header-con {
+    padding: 1.2rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .header-con {
+    padding: 1.2rem 3rem;
+  }
 }
 
 @media only screen and (min-width: 992px) {

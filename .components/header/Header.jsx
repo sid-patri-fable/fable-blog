@@ -36,7 +36,7 @@ const Header = (props) => {
           position: 'sticky',
           top: '0',
           zIndex: '4',
-          borderBottom: '1px solid #d0d0ff'
+          borderBottom: menuOpen ? '' : '1px solid #d0d0ff'
         }}
         className='header-con'
       >
@@ -122,6 +122,7 @@ const Header = (props) => {
                     borderRadius: '4rem',
                     fontSize: '1rem',
                     fontWeight: 500,
+                    lineHeight: '1',
                   }}
                   className={`${cta.type === 'secondary' ? 'cta-secondary' : 'cta-primary'}`}
                   href={cta.url}
@@ -141,6 +142,41 @@ const Header = (props) => {
             {props.props.navLinks.links.map((link) => (
               <MenuItemMobile key={link.title} item={link} />
             ))}
+          </div>
+          <div
+            className=''
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              flexDirection: 'row-reverse',
+              width: '100%',
+              gap: '1rem',
+            }}
+          >
+            {props.props.ctas.map((cta, idx) => {
+              return (
+                <a
+                  style={{
+                    border: '2px solid #7567ff',
+                    transition: 'all .2s ease-out',
+                    padding: '1rem 2rem',
+                    font: 'inherit',
+                    borderRadius: '4rem',
+                    fontSize: '1rem',
+                    fontWeight: 500,
+                    lineHeight: '1',
+                    display: 'block',
+                    flex: '1',
+                    textAlign: 'center'
+                  }}
+                  className={`${cta.type === 'secondary' ? 'cta-secondary' : 'cta-primary'}`}
+                  href={cta.url}
+                  key={`${cta.url}-${idx}`}
+                >
+                  {cta.title}
+                </a>
+              )
+            })}
           </div>
         </div>
       </div>
@@ -179,7 +215,7 @@ const MenuItemMobile = (props) => {
             style={{
               height: '8px',
               marginLeft: '5px',
-              transform: `${isOpen ? 'rotate(180deg)' : 'rotate(0)'}`,
+              transform: `${isOpen ? 'rotate(360deg)' : 'rotate(270deg)'}`,
               transition: 'all 0.3s ease-out'
             }}
             alt="icon"
@@ -204,8 +240,13 @@ const MenuItemMobile = (props) => {
           {props.item.sublinks.map((sublink, idx) => (
             <a href={sublink.url} key={`${sublink.title}-${idx}`} target="_blank" rel="noopener noreferrer" style={{ display: 'flex', alignItems: 'center', gap: '0.8rem' }}>
               <img src={sublink.logo} alt="logo" />
-              <div key={sublink.title}>
-                {sublink.title}
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem' }} key={sublink.title}>
+                <p style={{ margin: '0', lineHeight: '1', fontSize: '14px', fontWeight: 500 }}>
+                  {sublink.title}
+                </p>
+                <p style={{ margin: '0', lineHeight: '1', fontSize: '14px' }}>
+                  {sublink.subtitle}
+                </p>
               </div>
             </a>
           ))}
