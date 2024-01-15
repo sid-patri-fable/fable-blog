@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import "./index.css"
+import { Link } from 'react-router-dom';
 
 const Header = (props) => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -50,7 +51,7 @@ const Header = (props) => {
           }}
         >
           <h1 style={{ margin: '0', lineHeight: 1, display: 'inline', maxHeight: 'contain' }}>
-            <a href='/' style={{ backgroundColor: 'transparent', lineHeight: 1 }}>
+            <Link to='/' style={{ backgroundColor: 'transparent', lineHeight: 1 }}>
               <img
                 src={props.props.logo.imageUrl}
                 alt="fable logo"
@@ -59,7 +60,7 @@ const Header = (props) => {
                   width: '112px'
                 }}
               />
-            </a>
+            </Link>
           </h1>
           <div className='menu-screen'>
             <ul

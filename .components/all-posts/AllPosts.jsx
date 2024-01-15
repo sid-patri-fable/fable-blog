@@ -1,5 +1,6 @@
 import React from 'react'
 import "./index.css"
+import {Link} from 'react-router-dom';
 
 const getLatestPosts = (manifest) => {
   const latestPosts = []
@@ -37,10 +38,10 @@ export default function AllPosts(props) {
         {latestPosts.map(((post, idx) => {
           if (post.link === '/blog/') return <React.Fragment key={`${post.link}-${idx}`} />
           return (
-            <a
+            <Link
               className='post-banner'
               key={`${post.link}-${idx}`}
-              href={post.link}
+              to={post.link}
               style={{
                 backgroundColor: 'white',
                 borderTopLeftRadius: '10px',
@@ -84,7 +85,7 @@ export default function AllPosts(props) {
                   />
                 </div>
               </div>
-            </a>
+            </Link>
           )
         }))}
       </div>

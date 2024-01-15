@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom';
 
 const getLatestPosts = (manifest) => {
   const latestPosts = []
@@ -35,9 +36,9 @@ export default function LatestPosts(props) {
       >
         {latestPosts.slice(0, 3).map(((post, idx) => {
           return (
-            <a
+            <Link
               key={idx}
-              href={post.link}
+              to={post.link}
               style={{
                 padding: '1.5rem',
                 backgroundColor: 'white',
@@ -88,12 +89,12 @@ export default function LatestPosts(props) {
                   />
                 </div>
               </div>
-            </a>
+            </Link>
           )
         }))}
       </div>
-      <a
-        href='/'
+      <Link
+        to='/'
         style={{
           margin: '3rem auto',
           display: 'block',
@@ -106,7 +107,7 @@ export default function LatestPosts(props) {
         }}
       >
         See more news
-      </a>
+      </Link>
     </div>
   )
 }
