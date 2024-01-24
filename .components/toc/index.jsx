@@ -1,5 +1,6 @@
 import React from 'react'
 import "./index.css"
+import { Link } from 'react-router-dom';
 
 const TOC = (props) => {
   return (
@@ -15,7 +16,7 @@ const TOC = (props) => {
               className='toc-list-item'
               key={`${content.data.hProperties.id}`}
             >
-              <a href={`#${content.data.hProperties.id}`}>{content.value}</a>
+              <Link href={`#${content.data.hProperties.id}`}>{content.value}</Link>
             </li>
           )
         })}
