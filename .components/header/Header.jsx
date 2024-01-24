@@ -77,7 +77,7 @@ const Header = (props) => {
               {props.props.navLinks.links.map((link, idx) => {
                 if (link?.sublinks) {
                   return (
-                    <li key={idx} className='header-link-con'>
+                    <li key={`${link.title}-${idx}`} className='header-link-con'>
                       <Menu
                         title={link.title}
                         subTitle={link.subtitle}
@@ -88,10 +88,10 @@ const Header = (props) => {
                   )
                 }
                 return (
-                  <li className='header-link-con' key={idx}>
+                  <li className='header-link-con' key={`${link.title}-${idx}`}>
                     <a
                       className='header-link'
-                      href="#"
+                      href={link.url}
                     >
                       {link.title}
                     </a>

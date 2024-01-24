@@ -82,9 +82,9 @@ module.exports = {
               },
               {
                 title: 'Fable blog',
-                subtitle: 'Handy resources that all GTM teams will love',
+                subtitle: 'Marketing & sales folks - you do not want to miss this!',
                 logo: 'https://sharefable.com/logo/blog-logo.svg',
-                url: 'https://sharefable.com/ebooks'
+                url: 'https://sharefable.com/blog'
               }
             ],
             banner: {
