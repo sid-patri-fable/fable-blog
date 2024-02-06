@@ -3,6 +3,7 @@ import Banner from '../banner';
 import CoverImg from '../CoverImg';
 import Promotion from '../Promotion';
 import PromotionBannerCta from '../PromotionBannerCta';
+import Content from '../Content';
 
 const rgxBlogRoute = /^\/blog\/?$/;
 
@@ -28,7 +29,11 @@ const CustomLayout = (props) => {
           )}
         </Banner>
       )}
-      {props.children}
+      {isBlogRoute ? (props.children) : (
+      <Content toc={props.toc}>
+        {props.children}
+      </Content>
+      )}
       {(props.frontmatter?.promotionTitle || props.frontmatter?.promotionSubtitle) && (
         <Promotion config={props.config}>
           <h2>{props.frontmatter.promotionTitle}</h2>
