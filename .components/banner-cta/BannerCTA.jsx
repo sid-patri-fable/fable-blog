@@ -1,7 +1,8 @@
 import React from 'react'
 import "./index.css"
 
-const BannerCTA = () => {
+const BannerCTA = (props) => {
+  if(!props.show) return null;
   return (
     <div className='banner-cta-con'>
       <div className='banner-cta-content'>

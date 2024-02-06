@@ -1,8 +1,8 @@
 import React from 'react'
 import "./index.css"
-import { Link } from 'react-router-dom';
 
 const TOC = (props) => {
+  if(!props.toc) return null;
   return (
     <div className='toc-con'>
       <p className='toc-title'>Table of Contents</p>

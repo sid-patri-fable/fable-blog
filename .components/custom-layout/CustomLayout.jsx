@@ -29,11 +29,9 @@ const CustomLayout = (props) => {
           )}
         </Banner>
       )}
-      {isBlogRoute ? (props.children) : (
-      <Content toc={props.toc}>
+      <Content toc={props.toc.length && props.toc} showBanner={props.toc.length}>
         {props.children}
       </Content>
-      )}
       {(props.frontmatter?.promotionTitle || props.frontmatter?.promotionSubtitle) && (
         <Promotion config={props.config}>
           <h2>{props.frontmatter.promotionTitle}</h2>
