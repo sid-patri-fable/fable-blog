@@ -1,8 +1,8 @@
 import React from 'react'
 import "./index.css"
-import { Link } from 'react-router-dom';
 
 const TOC = (props) => {
+  if(!props.toc) return null;
   return (
     <div className='toc-con'>
       <p className='toc-title'>Table of Contents</p>
@@ -16,7 +16,12 @@ const TOC = (props) => {
               className='toc-list-item'
               key={`${content.data.hProperties.id}`}
             >
-              <a href={`#${content.data.hProperties.id}`}>{content.value}</a>
+              <a 
+                href={`#${content.data.hProperties.id}`}
+                style={{
+                  background: 'transparent'
+                }}
+              >{content.value}</a>
             </li>
           )
         })}

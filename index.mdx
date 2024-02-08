@@ -1,17 +1,10 @@
 ---
 title: Fable Blog
+subtitle: Explore the world of demo automation and get insights into strategies that you can use to increase your conversion and close more deals.
 ogTitle: Fable Blog
 ogDescription: A must follow blog for all the sales and marketing leaders.
 ---
 
 import AllPosts from './.components/all-posts/AllPosts'
-import Banner from './.components/banner'
 
-<Banner config={props.config} height={'60vh'}>
-  <div style={{ maxWidth: '546px', padding: '0 16px' }}>
-    # Blog
-    Explore the world of demo automation and get insights into strategies that you can use to increase your conversion and close more deals.
-  </div>
-  
-  <AllPosts manifest={props.manifest} config={props.config} />
-</Banner>
+<AllPosts manifest={props.manifest} config={props.config} />

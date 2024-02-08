@@ -9,7 +9,7 @@ export default function Content(props) {
       <div className='content'>
         {props.children}
       </div>
-      <BannerCTA />
+      <BannerCTA show={props.showBanner} />
     </div>
   )
 }
