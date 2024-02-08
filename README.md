@@ -4,51 +4,25 @@
 
 ```
 ---
-title: what is a product demo? the full guide for sales teams,how to deliver a successful product demo
-subtitle: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et ma
-date: October 4, 2022
-bannerImg: https://assets.website-files.com/632d5bc0374819cb83880d61/632efe9d047920775fad3c3f_Main%20Image-p-800.png
-ogTitle: og title for meta tag
-ogDescription: og description for meta tag
-ogImage: og image for meta tag
-website: website
-ogUrl: og url for meta tag
-summary_large_card: summary large card for meta tag
-twitterDomain: a domain name for twitter
-twitterUrl: url for twitter meta tag
-twitterTitle: title for twitter
-twitterDescription: description for twitter
-twitterImage: image for twitter seo
+title: The Ultimate Product Demo Guide for Sales Teams to Close More Deals
+subtitle: In this comprehensive guide, we will dive into everything you want to know about product demos and how you can nail your demos to close more deals.
+date: January 10, 2024
+bannerImg: https://github.com/sid-patri-fable/fable-blog/assets/155963795/adbda461-871c-45e7-8583-559cd0cd42f3
+ogTitle: The Ultimate Product Demo Guide for Sales Teams to Close More Deals
+ogDescription: Wondering what product demos are and how they can boost your sales? Look no further! This ultimate guide provides valuable insights and strategies to help you master the art of product demos.
+ogImage: https://github.com/sid-patri-fable/fable-blog/assets/155963795/adbda461-871c-45e7-8583-559cd0cd42f3)
+bannerDate: January 10, 2024
+bannerTitle: The Ultimate Product Demo Guide for Sales Teams to Close More Deals
+bannerSubtitle: In this comprehensive guide, we will dive into everything you want to know about product demos and how you can nail your demos to close more deals.
+promotionTitle: Start your 14-day free trial today!
+promotionSubtitle: Want to get the right partner for your sales team and close more deals?
+promotionCTA: Get started
+promotionLink: https://app.sharefable.com/login
 ---
 
-import Banner from '../.components/banner'
-import LatestPosts from '../.components/LatestPosts'
-import Promotion from '../.components/Promotion'
-import Content from '../.components/Content'
-import CoverImg from '../.components/CoverImg'
-import PromotionBannerCta from '../.components/PromotionBannerCta'
 
+# your mdx content will go here
 
-<Banner config={props.config}>
-  <div style={{ maxWidth: '768px' }}>
-    10 Jan 2024
-    # Banner title
-    Banner subtitle or desctiption
-  </div>
-  <CoverImg src={bannerImg} />
-</Banner>
-
-<Content>
-  # main content will go here
-</Content>
-
-<Promotion config={props.config}>
-  ## Ready to get started? Start your 7-day free trial today!
-  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque.
-  <PromotionBannerCta href="/#" cta='Get started' />
-</Promotion>
-
-<LatestPosts manifest={props.manifest} config={props.config} />
 
 ```
 
