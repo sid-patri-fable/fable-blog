@@ -1,6 +1,23 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import "./index.css"
 import {Link} from 'react-router-dom';
+
+const filesToSkip = [{ 
+  pathName:   "/blog/",
+  nodeName : "index.mdx"
+}]
+
+const shouldSkipNode = (node) => {
+  for (const skipNode of filesToSkip) {
+    if (
+      skipNode.pathName === node.pathName &&
+      skipNode.nodeName === node.nodeName
+    ) {
+      return true;
+    }
+  }
+  return false;
+};
 
 const getLatestPosts = (manifest) => {
   const latestPosts = []
@@ -9,19 +26,27 @@ const getLatestPosts = (manifest) => {
   while (queue.length > 0) {
     const node = queue.shift()
 
-    if (node.nodeType === 'file' && node.ext === '.mdx') {
+    if (node.nodeType === 'file' && node.ext === '.mdx' && !shouldSkipNode(node)) {
       latestPosts.push({ ...node.frontmatter, link: node.pathName })
     }
 
     node.children?.forEach(child => queue.push(child))
   }
 
-  return latestPosts
+  return latestPosts.sort((a, b) => {
+    const dateA = new Date(a.date);
+    const dateB = new Date(b.date);
+    return dateB - dateA;
+  })
 }
 
 export default function AllPosts(props) {
-  const latestPosts = getLatestPosts(props.manifest)
+  const [latestPosts, setLatestPosts] = useState([])
   const borderColor = ['#ff5cc5', '#37b8ff', '#c24ce3', '#ffc901']
+
+  useEffect(() => {
+    setLatestPosts(getLatestPosts(props.manifest));
+  }, [props.manifest])
 
   return (
     <div className='posts-con'>
@@ -36,7 +61,6 @@ export default function AllPosts(props) {
         }}
       >
         {latestPosts.map(((post, idx) => {
-          if (post.link === '/blog/') return <React.Fragment key={`${post.link}-${idx}`} />
           return (
             <Link
               className='post-banner'
