@@ -398,6 +398,7 @@ function Menu(props) {
               background: 'linear-gradient(90deg,#fedf64,#ff7450,#7567ff)',
               borderRadius: '6px',
               padding: '1px',
+              height: 'fit-content'
             }}
           >
             <div
@@ -405,7 +406,7 @@ function Menu(props) {
                 backgroundColor: '#fff',
                 borderRadius: '6px',
                 padding: '1rem 2rem',
-                height: 'calc(100% - 2rem)'
+                height: 'fit-content'
               }}
             >
 

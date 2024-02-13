@@ -49,6 +49,12 @@ module.exports = {
                 logo: 'https://sharefable.com/logo/partnerships-logo.svg',
                 url: 'https://sharefable.com/solutions/partnerships'
               },
+              {
+                title: 'Learning & Development',
+                subtitle: 'Supercharge training and onboarding',
+                logo: 'https://sharefable.com/logo/learning-and-development-logo.svg',
+                url: 'https://sharefable.com/solutions/learning-and-development'
+              },
             ],
             banner: {
               title: 'You\'d not want to miss this!',
@@ -134,6 +140,7 @@ module.exports = {
             { title: 'Sales', url: 'https://sharefable.com/solutions/sales' },
             { title: 'Presales', url: 'https://sharefable.com/solutions/presales' },
             { title: 'Partnerships', url: 'https://sharefable.com/solutions/partnerships' },
+            { title: 'Learning & Development', url: 'https://sharefable.com/solutions/learning-and-development' },
           ]
         },
         {
