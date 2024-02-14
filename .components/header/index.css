@@ -179,7 +179,7 @@ body.no-scroll {
 }
 
 .collapsible.open .menu-item-content  {
-  max-height: 20rem;
+  max-height: 30rem;
   height: fit-content;
 }
 .menu-content-mobile .menu-item-content {
