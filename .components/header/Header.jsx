@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import "./index.css"
-import { Link } from 'react-router-dom';
 
 const Header = (props) => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -51,7 +50,7 @@ const Header = (props) => {
           }}
         >
           <h1 style={{ margin: '0', lineHeight: 1, display: 'inline', maxHeight: 'contain' }}>
-            <Link to='/' style={{ backgroundColor: 'transparent', lineHeight: 1 }}>
+            <a href='/' style={{ backgroundColor: 'transparent', lineHeight: 1 }}>
               <img
                 src={props.props.logo.imageUrl}
                 alt="fable logo"
@@ -60,7 +59,7 @@ const Header = (props) => {
                   width: '112px'
                 }}
               />
-            </Link>
+            </a>
           </h1>
           <div className='menu-screen'>
             <ul
@@ -139,7 +138,7 @@ const Header = (props) => {
       <div className={`overlay ${menuOpen ? 'open' : ''}`} onClick={handleToggleMenu}></div>
       <div className={`menu-content ${menuOpen ? 'open' : ''}`}>
         <div style={{ height: '100%', padding: '1rem' }}>
-          <div className="menu-content-mobile">
+          <div className="menu-content-mobile" style={{ overflowY: 'auto' }}>
             {props.props.navLinks.links.map((link) => (
               <MenuItemMobile key={link.title} item={link} />
             ))}
@@ -398,6 +397,7 @@ function Menu(props) {
               background: 'linear-gradient(90deg,#fedf64,#ff7450,#7567ff)',
               borderRadius: '6px',
               padding: '1px',
+              height: 'fit-content'
             }}
           >
             <div
@@ -405,7 +405,7 @@ function Menu(props) {
                 backgroundColor: '#fff',
                 borderRadius: '6px',
                 padding: '1rem 2rem',
-                height: 'calc(100% - 2rem)'
+                height: 'fit-content'
               }}
             >
 
