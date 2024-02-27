@@ -85,7 +85,7 @@ module.exports = {
               { title: 'Knowledge Base',
                 subtitle: 'Help you create compelling interactive demos',
                 logo: 'https://sharefable.com/logo/knowledge-base.svg',
-                url: 'https://docs.sharefable.com/' 
+                url: 'https://help.sharefable.com/' 
               },
               {
                 title: 'E-Books',
@@ -153,7 +153,7 @@ module.exports = {
           links: [
             { title: 'Fable Champs', url: 'https://sharefable.com/growth-stories' },
             { title: 'Fable Untold', url: 'https://sharefable.com/podcast/mastering-b2b-demand-generation' },
-            { title: 'Knowledge Base', url: 'https://docs.sharefable.com/' },
+            { title: 'Knowledge Base', url: 'https://help.sharefable.com/' },
             { title: 'E-Books', url: 'https://sharefable.com/ebooks' },
             { title: 'Fable Blog', url: 'https://sharefable.com/blog' },
             { title: 'Privacy Policy', url: 'https://sharefable.com/privacy-policy' },
