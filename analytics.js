@@ -1,3 +1,5 @@
+"use strict";
+
 const addGTMandGA = () => {
   const head = document.querySelector("head");
   const body = document.querySelector("body");
