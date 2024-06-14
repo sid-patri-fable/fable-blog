@@ -38,22 +38,16 @@ module.exports = {
                 url: "https://sharefable.com/solutions/sales",
               },
               {
-                title: "Presales",
-                subtitle: "Scale demo environments & personalize in minutes",
-                logo: "https://sharefable.com/logo/presales-logo.svg",
-                url: "https://sharefable.com/solutions/presales",
+                title: "Customer Success",
+                subtitle: "Reduce support tickets with step-by-step guides",
+                logo: "https://sharefable.com/logo/learning-and-development-logo.svg",
+                url: "https://sharefable.com/solutions/customer-success",
               },
               {
                 title: "Partnerships",
                 subtitle: "Enable partners and skyrocket channel sales",
                 logo: "https://sharefable.com/logo/partnerships-logo.svg",
                 url: "https://sharefable.com/solutions/partnerships",
-              },
-              {
-                title: "Learning & Development",
-                subtitle: "Supercharge training and onboarding",
-                logo: "https://sharefable.com/logo/learning-and-development-logo.svg",
-                url: "https://sharefable.com/solutions/learning-and-development",
               },
             ],
             banner: {
@@ -134,14 +128,14 @@ module.exports = {
       },
       ctas: [
         {
-          type: "secondary",
-          title: "Start 14 days free trial",
-          url: "https://app.sharefable.com/login",
+          type: "primary",
+          title: "Start for free",
+          url: "https://www.sharefable.com/start-for-free?ref=nav_bar",
         },
         {
-          type: "primary",
-          title: "Get a demo",
-          url: "https://sharefable.com/get-a-demo",
+          type: "secondary",
+          title: "Book a demo",
+          url: "https://www.sharefable.com/get-a-demo",
         },
       ],
     },
@@ -162,16 +156,12 @@ module.exports = {
             },
             { title: "Sales", url: "https://sharefable.com/solutions/sales" },
             {
-              title: "Presales",
-              url: "https://sharefable.com/solutions/presales",
+              title: "Customer Success",
+              url: "https://sharefable.com/solutions/customer-success",
             },
             {
               title: "Partnerships",
               url: "https://sharefable.com/solutions/partnerships",
-            },
-            {
-              title: "Learning & Development",
-              url: "https://sharefable.com/solutions/learning-and-development",
             },
           ],
         },
@@ -221,28 +211,28 @@ module.exports = {
           heading: "Competitors",
           links: [
             {
+              title: "Fable vs Storylane",
+              url: "https://sharefable.com/comparison/fable-vs-storylane",
+            },
+            {
               title: "Fable vs Navattic",
               url: "https://sharefable.com/comparison/fable-vs-navattic",
             },
             {
-              title: "Fable vs Demostack",
-              url: "https://sharefable.com/comparison/fable-vs-demostack",
+              title: "Fable vs Supademo",
+              url: "https://sharefable.com/comparison/fable-vs-supademo",
             },
             {
-              title: "Fable vs Reprise",
-              url: "https://sharefable.com/comparison/fable-vs-reprise",
+              title: "Fable vs Tourial",
+              url: "https://sharefable.com/comparison/fable-vs-tourial",
             },
             {
               title: "Fable vs Walnut",
               url: "https://sharefable.com/comparison/fable-vs-walnut",
             },
             {
-              title: "Fable vs Storylane",
-              url: "https://sharefable.com/comparison/fable-vs-storylane",
-            },
-            {
-              title: "Fable vs Testbox",
-              url: "https://sharefable.com/comparison/fable-vs-testbox",
+              title: "Fable vs Reprise",
+              url: "https://sharefable.com/comparison/fable-vs-reprise",
             },
           ],
         },
