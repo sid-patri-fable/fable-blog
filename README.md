@@ -1,5 +1,34 @@
 # Fable Blog
 
+<h2 id="embed-fable">Embed fable iframe</h2>
+Following is an example file to embed fable in mdx file:
+
+```mdx
+---
+frontmatter-content: frontmatter content will go here
+---
+
+import FableEmbed from "./.components/fable-embed";
+
+## your mdx content
+
+for the fable embed u will need to write the following snippet. u can change the src to the demo link u want to embed
+
+<FableEmbed src="https://app.sharefable.com/embed/demo/home-page-demo-desktop-r52u9vcnfl0g1bq7" />
+
+```
+
+### Explanation:
+- `import FableEmbed from "./.components/fable-embed";`
+  
+       - this is a must to embed the fable iframe
+       - this should be pasted right after the frontmater and just before the mdx content
+- `<FableEmbed src="https://app.sharefable.com/embed/demo/home-page-demo-desktop-r52u9vcnfl0g1bq7" />`
+
+       - paste this snippet where u want to embed the iframe
+       - src should include the demo embed link
+
+
 ## Template mdx file contents: 
 
 ```
