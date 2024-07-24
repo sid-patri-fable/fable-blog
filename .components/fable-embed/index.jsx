@@ -6,7 +6,7 @@ const FableEmbed = (props) => {
   useEffect(() => {
     const timeoutId = setTimeout(() => {
       setShowEmbedFrame(true);
-    }, 1000);
+    }, 10000);
 
     return () => clearTimeout(timeoutId);
   }, [])
