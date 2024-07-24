@@ -4,9 +4,10 @@ const FableEmbed = (props) => {
   const [showEmbedFrame, setShowEmbedFrame] = useState(false);
 
   useEffect(() => {
+    const timeoutMs = window.location.host.includes("localhost") ? 10000 : 0;
     const timeoutId = setTimeout(() => {
       setShowEmbedFrame(true);
-    }, 10000);
+    }, timeoutMs);
 
     return () => clearTimeout(timeoutId);
   }, [])
