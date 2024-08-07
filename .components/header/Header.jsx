@@ -190,7 +190,7 @@ const MenuItemMobile = (props) => {
   const handleToggleCollapsible = () => {
     setIsOpen(!isOpen);
   };
-
+  
   const hasSublinks = props.item.sublinks && props.item.sublinks.length > 0;
 
   return (
@@ -397,7 +397,8 @@ function Menu(props) {
               background: 'linear-gradient(90deg,#fedf64,#ff7450,#7567ff)',
               borderRadius: '6px',
               padding: '1px',
-              height: 'fit-content'
+              height: 'fit-content',
+              margin: 'auto 0',
             }}
           >
             <div
@@ -430,16 +431,22 @@ function Menu(props) {
                   marginTop: '1rem'
                 }}
               >
-                <p
-                  style={{
-                    lineHeight: '1',
-                    margin: '0',
-                    fontWeight: '600',
-                    fontSize: '0.9rem'
-                  }}
+                <div
+                  style={{display: "flex", alignItems: "center", gap: "4rem"}}
                 >
-                  {props.banner.heading}
-                </p>
+                  <p
+                    style={{
+                      lineHeight: '1.5',
+                      margin: '0',
+                      fontWeight: '600',
+                      fontSize: '0.9rem',
+                      maxWidth: '13rem',
+                    }}
+                  >
+                    {props.banner.heading}
+                  </p>
+                  <img src={props.banner.image.url}></img>
+                </div>
                 <p
                   style={{
                     lineHeight: '1',

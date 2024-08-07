@@ -65,14 +65,17 @@ module.exports = {
               },
             ], 
             banner: {
-              title: "You'd not want to miss this!",
-              heading: "Create personalized demos to close more deals",
+              title: "Customers are raving about us on G2!",
+              heading: "Rated 4.9 on G2 & trusted by GTM teams across the world",
               description:
-                "Our CEO was feature in Tekpon's podcast where he shared valuable insights on... well... how to close more deals!",
+                "",
               cta: {
-                title: "Give it a listen",
-                url: "https://tekpon.com/podcasts/create-personalized-product-demos-to-close-more-deals/",
+                title: "Check it out",
+                url: "https://www.g2.com/products/pyxis-voyager-inc-fable/reviews",
               },
+              image: {
+                url: "https://sharefable.com/g2-badges/usersLoveUs.svg",
+              }
             },
           },
           {
@@ -132,14 +135,17 @@ module.exports = {
               },
             ],
             banner: {
-              title: "You'd not want to miss this!",
-              heading: "Create personalized demos to close more deals",
+              title: "Customers are raving about us on G2!",
+              heading: "Rated 4.9 on G2 & trusted by GTM teams across the world",
               description:
-                "Our CEO was feature in Tekpon's podcast where he shared valuable insights on... well... how to close more deals!",
+                "",
               cta: {
-                title: "Give it a listen",
-                url: "https://tekpon.com/podcasts/create-personalized-product-demos-to-close-more-deals/",
+                title: "Check it out",
+                url: "https://www.g2.com/products/pyxis-voyager-inc-fable/reviews",
               },
+              image: {
+                url: "https://sharefable.com/g2-badges/usersLoveUs.svg",
+              }
             },
           },
           { title: "Pricing", url: "https://www.sharefable.com/pricing" },
