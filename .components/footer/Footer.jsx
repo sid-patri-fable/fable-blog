@@ -2,7 +2,6 @@ import React from 'react'
 import './index.css'
 
 const Footer = (props) => {
-  console.log(">>> props", props)
   return (
     <footer className={"footer-con"}>
       <div className={"conFooter"}>
