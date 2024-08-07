@@ -246,23 +246,23 @@ module.exports = {
       ],
       g2Badges: [
         {
-         source: 'https://web-git-add-g2-tags-share-fable.vercel.app/g2-badges/HighPerformer.svg',
+         source: 'https://sharefable.com/g2-badges/HighPerformer.svg',
          name: 'High Performer',
         },
         {
-         source: 'https://web-git-add-g2-tags-share-fable.vercel.app/g2-badges/EasiestToUse.svg',
+         source: 'https://sharefable.com/g2-badges/EasiestToUse.svg',
          name: 'Easiest To Use',
         },
         {
-         source: 'https://web-git-add-g2-tags-share-fable.vercel.app/g2-badges/FastestImplementation.svg',
+         source: 'https://sharefable.com/g2-badges/FastestImplementation.svg',
          name: 'Fastest Implementation',
         },
         {
-         source: 'https://web-git-add-g2-tags-share-fable.vercel.app/g2-badges/BestEstimatedROI.svg',
+         source: 'https://sharefable.com/g2-badges/BestEstimatedROI.svg',
          name: 'Best Estimated ROI',
         },
         {
-         source: 'https://web-git-add-g2-tags-share-fable.vercel.app/g2-badges/EasiestToDoBusinessWith.svg',
+         source: 'https://sharefable.com/g2-badges/EasiestToDoBusinessWith.svg',
          name: 'Easiest To Do Business With',
         },
       ],
