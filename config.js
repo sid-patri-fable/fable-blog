@@ -1,4 +1,5 @@
 import Header from "./.components/header/Header.jsx";
+import Footer from "./.components/footer/Footer.jsx";
 import TOC from "./.components/toc/index.jsx";
 import CustomLayout from "./.components/custom-layout/CustomLayout.jsx";
 
@@ -21,6 +22,7 @@ module.exports = {
         alignment: "right",
         links: [
           { title: "Product", url: "https://sharefable.com/products" },
+          { title: "Demo Hub", url: "https://app.sharefable.com/hub/seeall/fable-ihxi2rpy9h0u4ivh" },
           {
             title: "Solutions",
             subtitle: "The ultimate demo platform for all your GTM needs",
@@ -38,10 +40,10 @@ module.exports = {
                 url: "https://sharefable.com/solutions/sales",
               },
               {
-                title: "Customer Success",
-                subtitle: "Reduce support tickets with step-by-step guides",
-                logo: "https://sharefable.com/logo/learning-and-development-logo.svg",
-                url: "https://sharefable.com/solutions/customer-success",
+                title: "Presales",
+                subtitle: "Scale demo environments & personalize in minutes",
+                logo: "https://sharefable.com/logo/presales-logo.svg",
+                url: "https://sharefable.com/solutions/presales",
               },
               {
                 title: "Partnerships",
@@ -49,26 +51,50 @@ module.exports = {
                 logo: "https://sharefable.com/logo/partnerships-logo.svg",
                 url: "https://sharefable.com/solutions/partnerships",
               },
+              {
+                title: "Learning & Development",
+                subtitle: "Supercharge training and onboarding",
+                logo: "https://sharefable.com/logo/learning-and-development-logo.svg",
+                url: "https://sharefable.com/solutions/learning-and-development",
+              },
             ],
             banner: {
-              title: "You'd not want to miss this!",
-              heading: "Create personalized demos to close more deals",
+              title: "Customers are raving about us on G2!",
+              heading: "Rated 4.9 on G2 & trusted by GTM teams across the world",
               description:
-                "Our CEO was feature in Tekpon's podcast where he shared valuable insights on... well... how to close more deals!",
+                "",
               cta: {
-                title: "Give it a listen",
-                url: "https://tekpon.com/podcasts/create-personalized-product-demos-to-close-more-deals/",
+                title: "Check it out",
+                url: "https://www.g2.com/products/pyxis-voyager-inc-fable/reviews",
               },
+              image: {
+                url: "https://sharefable.com/g2-badges/usersLoveUs.svg",
+              }
             },
-          },
-          {
-            title: "Testimonials",
-            url: "https://sharefable.com/customer-love",
           },
           {
             title: "Resources",
             subtitle: "Made with love, from Fable's stable",
             sublinks: [
+              {
+                title: "Fable Blog",
+                subtitle:
+                  "Marketing & sales folks - you do not want to miss this!",
+                logo: "https://sharefable.com/logo/blog-logo.svg",
+                url: "https://sharefable.com/blog",
+              },
+              {
+                title: "Help Center",
+                subtitle: "Help you create compelling interactive demos",
+                logo: "https://sharefable.com/logo/knowledge-base.svg",
+                url: "https://docs.sharefable.com",
+              },
+              {
+                title: "E-Books",
+                subtitle: "Handy resources that all GTM teams will love",
+                logo: "https://sharefable.com/logo/e-books-logo.svg",
+                url: "https://sharefable.com/ebooks",
+              },
               {
                 title: "Fable Champs",
                 subtitle: "How hotshot SaaS companies achieved hypergrowth",
@@ -83,40 +109,24 @@ module.exports = {
                 url: "https://sharefable.com/podcast/mastering-b2b-demand-generation",
               },
               {
-                title: "Knowledge Base",
-                subtitle: "Help you create compelling interactive demos",
-                logo: "https://sharefable.com/logo/knowledge-base.svg",
-                url: "https://help.sharefable.com/",
-              },
-              {
-                title: "E-Books",
-                subtitle: "Handy resources that all GTM teams will love",
-                logo: "https://sharefable.com/logo/e-books-logo.svg",
-                url: "https://sharefable.com/ebooks",
-              },
-              {
-                title: "Fable Blog",
-                subtitle:
-                  "Marketing & sales folks - you do not want to miss this!",
-                logo: "https://sharefable.com/logo/blog-logo.svg",
-                url: "https://sharefable.com/blog",
-              },
-              {
-                title: "Demo Showcase",
-                subtitle: "Examples of interactive demos created using Fable",
-                logo: "https://sharefable.com/logo/demo-showcase-logo.svg",
-                url: "https://sharefable.com/demo-showcase",
+                title: "Testimonials",
+                subtitle: "Hear it from the horses' mouth why businesses love us",
+                logo: "https://sharefable.com/logo/testimonials.svg",
+                url: "https://sharefable.com/testimonials",
               },
             ],
             banner: {
-              title: "You'd not want to miss this!",
-              heading: "Create personalized demos to close more deals",
+              title: "Customers are raving about us on G2!",
+              heading: "Rated 4.9 on G2 & trusted by GTM teams across the world",
               description:
-                "Our CEO was feature in Tekpon's podcast where he shared valuable insights on... well... how to close more deals!",
+                "",
               cta: {
-                title: "Give it a listen",
-                url: "https://tekpon.com/podcasts/create-personalized-product-demos-to-close-more-deals/",
+                title: "Check it out",
+                url: "https://www.g2.com/products/pyxis-voyager-inc-fable/reviews",
               },
+              image: {
+                url: "https://sharefable.com/g2-badges/usersLoveUs.svg",
+              }
             },
           },
           { title: "Pricing", url: "https://sharefable.com/pricing" },
@@ -144,6 +154,7 @@ module.exports = {
     },
     content: {},
     footer: {
+      customComponent: Footer,
       logo: "https://sharefable.com/fable_footer-logo.svg",
       copyright: "Fable © 2024",
       links: [
@@ -176,13 +187,9 @@ module.exports = {
               title: "Fable Untold",
               url: "https://sharefable.com/podcast/mastering-b2b-demand-generation",
             },
-            { title: "Knowledge Base", url: "https://help.sharefable.com/" },
+            { title: "Help Center", url: "https://help.sharefable.com/" },
             { title: "E-Books", url: "https://sharefable.com/ebooks" },
             { title: "Fable Blog", url: "https://sharefable.com/blog" },
-            {
-              title: "Demo Showcase",
-              url: "https://sharefable.com/demo-showcase",
-            },
           ],
         },
         {
@@ -235,6 +242,28 @@ module.exports = {
               url: "https://sharefable.com/comparison/fable-vs-reprise",
             },
           ],
+        },
+      ],
+      g2Badges: [
+        {
+         source: 'https://sharefable.com/g2-badges/HighPerformer.svg',
+         name: 'High Performer',
+        },
+        {
+         source: 'https://sharefable.com/g2-badges/EasiestToUse.svg',
+         name: 'Easiest To Use',
+        },
+        {
+         source: 'https://sharefable.com/g2-badges/FastestImplementation.svg',
+         name: 'Fastest Implementation',
+        },
+        {
+         source: 'https://sharefable.com/g2-badges/BestEstimatedROI.svg',
+         name: 'Best Estimated ROI',
+        },
+        {
+         source: 'https://sharefable.com/g2-badges/EasiestToDoBusinessWith.svg',
+         name: 'Easiest To Do Business With',
         },
       ],
     },
