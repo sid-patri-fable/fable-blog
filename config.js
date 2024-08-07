@@ -1,4 +1,5 @@
 import Header from "./.components/header/Header.jsx";
+import Footer from "./.components/footer/Footer.jsx";
 import TOC from "./.components/toc/index.jsx";
 import CustomLayout from "./.components/custom-layout/CustomLayout.jsx";
 
@@ -58,14 +59,17 @@ module.exports = {
               },
             ],
             banner: {
-              title: "You'd not want to miss this!",
-              heading: "Create personalized demos to close more deals",
+              title: "Customers are raving about us on G2!",
+              heading: "Rated 4.9 on G2 & trusted by GTM teams across the world",
               description:
-                "Our CEO was feature in Tekpon's podcast where he shared valuable insights on... well... how to close more deals!",
+                "",
               cta: {
-                title: "Give it a listen",
-                url: "https://tekpon.com/podcasts/create-personalized-product-demos-to-close-more-deals/",
+                title: "Check it out",
+                url: "https://www.g2.com/products/pyxis-voyager-inc-fable/reviews",
               },
+              image: {
+                url: "https://sharefable.com/g2-badges/usersLoveUs.svg",
+              }
             },
           },
           {
@@ -112,14 +116,17 @@ module.exports = {
               },
             ],
             banner: {
-              title: "You'd not want to miss this!",
-              heading: "Create personalized demos to close more deals",
+              title: "Customers are raving about us on G2!",
+              heading: "Rated 4.9 on G2 & trusted by GTM teams across the world",
               description:
-                "Our CEO was feature in Tekpon's podcast where he shared valuable insights on... well... how to close more deals!",
+                "",
               cta: {
-                title: "Give it a listen",
-                url: "https://tekpon.com/podcasts/create-personalized-product-demos-to-close-more-deals/",
+                title: "Check it out",
+                url: "https://www.g2.com/products/pyxis-voyager-inc-fable/reviews",
               },
+              image: {
+                url: "https://sharefable.com/g2-badges/usersLoveUs.svg",
+              }
             },
           },
           { title: "Pricing", url: "https://sharefable.com/pricing" },
@@ -147,6 +154,7 @@ module.exports = {
     },
     content: {},
     footer: {
+      customComponent: Footer,
       logo: "https://sharefable.com/fable_footer-logo.svg",
       copyright: "Fable © 2024",
       links: [
@@ -234,6 +242,28 @@ module.exports = {
               url: "https://sharefable.com/comparison/fable-vs-reprise",
             },
           ],
+        },
+      ],
+      g2Badges: [
+        {
+         source: 'https://web-git-add-g2-tags-share-fable.vercel.app/g2-badges/HighPerformer.svg',
+         name: 'High Performer',
+        },
+        {
+         source: 'https://web-git-add-g2-tags-share-fable.vercel.app/g2-badges/EasiestToUse.svg',
+         name: 'Easiest To Use',
+        },
+        {
+         source: 'https://web-git-add-g2-tags-share-fable.vercel.app/g2-badges/FastestImplementation.svg',
+         name: 'Fastest Implementation',
+        },
+        {
+         source: 'https://web-git-add-g2-tags-share-fable.vercel.app/g2-badges/BestEstimatedROI.svg',
+         name: 'Best Estimated ROI',
+        },
+        {
+         source: 'https://web-git-add-g2-tags-share-fable.vercel.app/g2-badges/EasiestToDoBusinessWith.svg',
+         name: 'Easiest To Do Business With',
         },
       ],
     },
