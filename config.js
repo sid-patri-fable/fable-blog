@@ -1,4 +1,5 @@
 import Header from "./.components/header/Header.jsx";
+import Footer from "./.components/footer/Footer.jsx";
 import TOC from "./.components/toc/index.jsx";
 import CustomLayout from "./.components/custom-layout/CustomLayout.jsx";
 
@@ -21,6 +22,7 @@ module.exports = {
         alignment: "right",
         links: [
           { title: "Product", url: "https://www.sharefable.com/products" },
+          { title: "Demo Hub", url: "https://app.sharefable.com/hub/seeall/fable-ihxi2rpy9h0u4ivh" },
           { title: "Demo Hub", url: "https://app.sharefable.com/hub/seeall/fable-ihxi2rpy9h0u4ivh" },
           {
             title: "Solutions",
@@ -56,16 +58,19 @@ module.exports = {
                 logo: "https://www.sharefable.com/logo/learning-and-development-logo.svg",
                 url: "https://www.sharefable.com/solutions/learning-and-development",
               },
-            ],
+            ], 
             banner: {
-              title: "You'd not want to miss this!",
-              heading: "Create personalized demos to close more deals",
+              title: "Customers are raving about us on G2!",
+              heading: "Rated 4.9 on G2 & trusted by GTM teams across the world",
               description:
-                "Our CEO was feature in Tekpon's podcast where he shared valuable insights on... well... how to close more deals!",
+                "",
               cta: {
-                title: "Give it a listen",
-                url: "https://tekpon.com/podcasts/create-personalized-product-demos-to-close-more-deals/",
+                title: "Check it out",
+                url: "https://www.g2.com/products/pyxis-voyager-inc-fable/reviews",
               },
+              image: {
+                url: "https://www.sharefable.com/g2-badges/usersLoveUs.svg",
+              }
             },
           },
           {
@@ -112,14 +117,17 @@ module.exports = {
               },
             ],
             banner: {
-              title: "You'd not want to miss this!",
-              heading: "Create personalized demos to close more deals",
+              title: "Customers are raving about us on G2!",
+              heading: "Rated 4.9 on G2 & trusted by GTM teams across the world",
               description:
-                "Our CEO was feature in Tekpon's podcast where he shared valuable insights on... well... how to close more deals!",
+                "",
               cta: {
-                title: "Give it a listen",
-                url: "https://tekpon.com/podcasts/create-personalized-product-demos-to-close-more-deals/",
+                title: "Check it out",
+                url: "https://www.g2.com/products/pyxis-voyager-inc-fable/reviews",
               },
+              image: {
+                url: "https://www.sharefable.com/g2-badges/usersLoveUs.svg",
+              }
             },
           },
           { title: "Pricing", url: "https://www.sharefable.com/pricing" },
@@ -147,6 +155,7 @@ module.exports = {
     },
     content: {},
     footer: {
+      customComponent: Footer,
       logo: "https://www.sharefable.com/fable_footer-logo.svg",
       copyright: "Fable © 2024",
       links: [
@@ -179,9 +188,13 @@ module.exports = {
               title: "Fable Untold",
               url: "https://www.sharefable.com/podcast/mastering-b2b-demand-generation",
             },
-            { title: "Help Center", url: "https://help.sharefable.com/" },
+           { title: "Help Center", url: "https://help.sharefable.com/" },
             { title: "E-Books", url: "https://www.sharefable.com/ebooks" },
             { title: "Fable Blog", url: "https://www.sharefable.com/blog" },
+            {
+              title: "Demo Showcase",
+              url: "https://www.sharefable.com/demo-showcase",
+            },
           ],
         },
         {
@@ -234,6 +247,28 @@ module.exports = {
               url: "https://www.sharefable.com/comparison/fable-vs-reprise",
             },
           ],
+        },
+      ],
+      g2Badges: [
+        {
+         source: 'https://web-git-add-g2-tags-share-fable.vercel.app/g2-badges/HighPerformer.svg',
+         name: 'High Performer',
+        },
+        {
+         source: 'https://web-git-add-g2-tags-share-fable.vercel.app/g2-badges/EasiestToUse.svg',
+         name: 'Easiest To Use',
+        },
+        {
+         source: 'https://web-git-add-g2-tags-share-fable.vercel.app/g2-badges/FastestImplementation.svg',
+         name: 'Fastest Implementation',
+        },
+        {
+         source: 'https://web-git-add-g2-tags-share-fable.vercel.app/g2-badges/BestEstimatedROI.svg',
+         name: 'Best Estimated ROI',
+        },
+        {
+         source: 'https://web-git-add-g2-tags-share-fable.vercel.app/g2-badges/EasiestToDoBusinessWith.svg',
+         name: 'Easiest To Do Business With',
         },
       ],
     },
