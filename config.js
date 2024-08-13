@@ -58,12 +58,6 @@ module.exports = {
                 logo: "https://www.sharefable.com/logo/learning-and-development-logo.svg",
                 url: "https://www.sharefable.com/solutions/learning-and-development",
               },
-              {
-                title: "Learning & Development",
-                subtitle: "Supercharge training and onboarding",
-                logo: "https://www.sharefable.com/logo/learning-and-development-logo.svg",
-                url: "https://www.sharefable.com/solutions/learning-and-development",
-              },
             ], 
             banner: {
               title: "Customers are raving about us on G2!",
