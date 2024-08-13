@@ -190,10 +190,6 @@ module.exports = {
            { title: "Help Center", url: "https://help.sharefable.com/" },
             { title: "E-Books", url: "https://www.sharefable.com/ebooks" },
             { title: "Fable Blog", url: "https://www.sharefable.com/blog" },
-            {
-              title: "Demo Showcase",
-              url: "https://www.sharefable.com/demo-showcase",
-            },
           ],
         },
         {
