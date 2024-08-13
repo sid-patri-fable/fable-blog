@@ -23,7 +23,6 @@ module.exports = {
         links: [
           { title: "Product", url: "https://www.sharefable.com/products" },
           { title: "Demo Hub", url: "https://app.sharefable.com/hub/seeall/fable-ihxi2rpy9h0u4ivh" },
-          { title: "Demo Hub", url: "https://app.sharefable.com/hub/seeall/fable-ihxi2rpy9h0u4ivh" },
           {
             title: "Solutions",
             subtitle: "The ultimate demo platform for all your GTM needs",
@@ -88,7 +87,7 @@ module.exports = {
                 title: "Help Center",
                 subtitle: "Help you create compelling interactive demos",
                 logo: "https://www.sharefable.com/logo/knowledge-base.svg",
-                url: "https://docs.sharefable.com",
+                url: "https://help.sharefable.com",
               },
               {
                 title: "E-Books",
