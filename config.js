@@ -61,8 +61,8 @@ module.exports = {
               {
                 title: "Learning & Development",
                 subtitle: "Supercharge training and onboarding",
-                logo: "https://sharefable.com/logo/learning-and-development-logo.svg",
-                url: "https://sharefable.com/solutions/learning-and-development",
+                logo: "https://www.sharefable.com/logo/learning-and-development-logo.svg",
+                url: "https://www.sharefable.com/solutions/learning-and-development",
               },
             ], 
             banner: {
@@ -75,7 +75,7 @@ module.exports = {
                 url: "https://www.g2.com/products/pyxis-voyager-inc-fable/reviews",
               },
               image: {
-                url: "https://sharefable.com/g2-badges/usersLoveUs.svg",
+                url: "https://www.sharefable.com/g2-badges/usersLoveUs.svg",
               }
             },
           },
@@ -87,20 +87,20 @@ module.exports = {
                 title: "Fable Blog",
                 subtitle:
                   "Marketing & sales folks - you do not want to miss this!",
-                logo: "https://sharefable.com/logo/blog-logo.svg",
-                url: "https://sharefable.com/blog",
+                logo: "https://www.sharefable.com/logo/blog-logo.svg",
+                url: "https://www.sharefable.com/blog",
               },
               {
                 title: "Help Center",
                 subtitle: "Help you create compelling interactive demos",
-                logo: "https://sharefable.com/logo/knowledge-base.svg",
+                logo: "https://www.sharefable.com/logo/knowledge-base.svg",
                 url: "https://docs.sharefable.com",
               },
               {
                 title: "E-Books",
                 subtitle: "Handy resources that all GTM teams will love",
-                logo: "https://sharefable.com/logo/e-books-logo.svg",
-                url: "https://sharefable.com/ebooks",
+                logo: "https://www.sharefable.com/logo/e-books-logo.svg",
+                url: "https://www.sharefable.com/ebooks",
               },
               {
                 title: "Fable Blog",
@@ -112,27 +112,27 @@ module.exports = {
               {
                title: "Help Center",
                 subtitle: "Help you create compelling interactive demos",
-                logo: "https://sharefable.com/logo/knowledge-base.svg",
+                logo: "https://www.sharefable.com/logo/knowledge-base.svg",
                 url: "https://help.sharefable.com/",
               },
               {
                 title: "E-Books",
                 subtitle: "Handy resources that all GTM teams will love",
-                logo: "https://sharefable.com/logo/e-books-logo.svg",
-                url: "https://sharefable.com/ebooks",
+                logo: "https://www.sharefable.com/logo/e-books-logo.svg",
+                url: "https://www.sharefable.com/ebooks",
               },
               {
                 title: "Fable Blog",
                 subtitle:
                   "Marketing & sales folks - you do not want to miss this!",
-                logo: "https://sharefable.com/logo/blog-logo.svg",
-                url: "https://sharefable.com/blog",
+                logo: "https://www.sharefable.com/logo/blog-logo.svg",
+                url: "https://www.sharefable.com/blog",
               },
               {
                 title: "Demo Showcase",
                 subtitle: "Examples of interactive demos created using Fable",
-                logo: "https://sharefable.com/logo/demo-showcase-logo.svg",
-                url: "https://sharefable.com/demo-showcase",
+                logo: "https://www.sharefable.com/logo/demo-showcase-logo.svg",
+                url: "https://www.sharefable.com/demo-showcase",
               },
             ],
             banner: {
@@ -145,7 +145,7 @@ module.exports = {
                 url: "https://www.g2.com/products/pyxis-voyager-inc-fable/reviews",
               },
               image: {
-                url: "https://sharefable.com/g2-badges/usersLoveUs.svg",
+                url: "https://www.sharefable.com/g2-badges/usersLoveUs.svg",
               }
             },
           },
@@ -208,11 +208,11 @@ module.exports = {
               url: "https://www.sharefable.com/podcast/mastering-b2b-demand-generation",
             },
            { title: "Help Center", url: "https://help.sharefable.com/" },
-            { title: "E-Books", url: "https://sharefable.com/ebooks" },
-            { title: "Fable Blog", url: "https://sharefable.com/blog" },
+            { title: "E-Books", url: "https://www.sharefable.com/ebooks" },
+            { title: "Fable Blog", url: "https://www.sharefable.com/blog" },
             {
               title: "Demo Showcase",
-              url: "https://sharefable.com/demo-showcase",
+              url: "https://www.sharefable.com/demo-showcase",
             },
           ],
         },
