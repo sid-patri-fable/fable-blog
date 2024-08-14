@@ -76,7 +76,7 @@ export default function AllPosts(props) {
               }}
             >
               <img
-              alt=''
+              alt='banner img'
                 src={post.bannerImg}
                 style={{
                   borderRadius: '10px',
@@ -106,7 +106,7 @@ export default function AllPosts(props) {
                 >
                   <span>Read more</span>
                   <img
-                  alt=''
+                  alt='read more'
                     src='https://assets.website-files.com/632d5bc037481960cc880d53/633df61bb33515b8f0103b50_Vector.svg'
                   />
                 </div>
