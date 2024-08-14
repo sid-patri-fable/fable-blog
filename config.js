@@ -81,7 +81,7 @@ module.exports = {
                 title: "Help Center",
                 subtitle: "Help you create compelling interactive demos",
                 logo: "https://www.sharefable.com/logo/knowledge-base.svg",
-                url: "https://help.sharefable.com",
+                url: "https://help.sharefable.com/Introduction/Welcome-to-Fable",
               },
               {
                 title: "E-Books",
@@ -181,7 +181,7 @@ module.exports = {
               title: "Fable Untold",
               url: "https://www.sharefable.com/podcast/mastering-b2b-demand-generation",
             },
-           { title: "Help Center", url: "https://help.sharefable.com/" },
+           { title: "Help Center", url: "https://help.sharefable.com/Introduction/Welcome-to-Fable" },
             { title: "E-Books", url: "https://www.sharefable.com/ebooks" },
             { title: "Fable Blog", url: "https://www.sharefable.com/blog" },
           ],
