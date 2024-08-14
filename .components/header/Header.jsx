@@ -445,7 +445,7 @@ function Menu(props) {
                   >
                     {props.banner.heading}
                   </p>
-                  <img src={props.banner.image.url}></img>
+                  <img alt='' src={props.banner.image.url}></img>
                 </div>
                 <p
                   style={{
