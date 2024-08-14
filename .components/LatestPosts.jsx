@@ -1,6 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom';
-
+ 
 const getLatestPosts = (manifest) => {
   const latestPosts = []
   const queue = [manifest.tree]
