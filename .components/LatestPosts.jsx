@@ -1,6 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom';
-
+ 
 const getLatestPosts = (manifest) => {
   const latestPosts = []
   const queue = [manifest.tree]
@@ -59,6 +59,7 @@ export default function LatestPosts(props) {
                   width: '100%',
                   height: 'auto',
                 }}
+                alt=''
               />
               <div style={{
                 display: 'flex',
@@ -85,6 +86,7 @@ export default function LatestPosts(props) {
                 >
                   <span>Read more</span>
                   <img
+                  alt=''
                     src='https://assets.website-files.com/632d5bc037481960cc880d53/633df61bb33515b8f0103b50_Vector.svg'
                   />
                 </div>
