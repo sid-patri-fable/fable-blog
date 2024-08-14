@@ -59,7 +59,7 @@ export default function LatestPosts(props) {
                   width: '100%',
                   height: 'auto',
                 }}
-                alt=''
+                alt='banner img'
               />
               <div style={{
                 display: 'flex',
@@ -86,7 +86,7 @@ export default function LatestPosts(props) {
                 >
                   <span>Read more</span>
                   <img
-                  alt=''
+                  alt='read more'
                     src='https://assets.website-files.com/632d5bc037481960cc880d53/633df61bb33515b8f0103b50_Vector.svg'
                   />
                 </div>
