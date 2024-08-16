@@ -49,7 +49,7 @@ const Header = (props) => {
             justifyContent: 'space-between'
           }}
         >
-          <h1 style={{ margin: '0', lineHeight: 1, display: 'inline', maxHeight: 'contain' }}>
+          <div style={{ fontSize: '3.62rem', margin: '0', lineHeight: 1, display: 'inline', maxHeight: 'contain' }}>
             <a href='/' style={{ backgroundColor: 'transparent', lineHeight: 1 }}>
               <img
                 src={props.props.logo.imageUrl}
@@ -60,7 +60,7 @@ const Header = (props) => {
                 }}
               />
             </a>
-          </h1>
+          </div>
           <div className='menu-screen'>
             <ul
               style={{
