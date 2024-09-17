@@ -23,6 +23,7 @@ module.exports = {
         links: [
           {
             title: "Product",
+            subtitle: "The ultimate demo platform for all your GTM needs",
             sublinks: [
               {
                 title: "Interactive Demo",
