@@ -21,8 +21,37 @@ module.exports = {
       navLinks: {
         alignment: "right",
         links: [
-          { title: "Product", url: "https://www.sharefable.com/products" },
-          { title: "Demo Hub", url: "https://app.sharefable.com/hub/seeall/fable-ihxi2rpy9h0u4ivh" },
+          {
+            title: "Product",
+            sublinks: [
+              {
+                title: "Interactive Demo",
+                subtitle: "Increase conversions from your existing funnel",
+                logo: "https://www.sharefable.com/logo/marketing-logo.svg",
+                url: "https://www.sharefable.com/products/interactive-demo",
+              },
+              {
+                title: "Demo Hub",
+                subtitle: "Create deal-winning demos every single time",
+                logo: "https://www.sharefable.com/logo/sales-logo.svg",
+                url: "https://www.sharefable.com/products/demo-hub",
+              },
+            ],
+            banner: {
+              title: "Customers are raving about us on G2!",
+              heading: "Rated 4.9 on G2 & trusted by GTM teams across the world",
+              description:
+                "",
+              cta: {
+                title: "Check it out",
+                url: "https://www.g2.com/products/pyxis-voyager-inc-fable/reviews",
+              },
+              image: {
+                url: "https://www.sharefable.com/g2-badges/usersLoveUs.svg",
+              }
+            },
+          },
+          { title: "Quilly", url: "https://www.sharefable.com/products/quilly" },
           {
             title: "Solutions",
             subtitle: "The ultimate demo platform for all your GTM needs",
@@ -51,7 +80,7 @@ module.exports = {
                 logo: "https://www.sharefable.com/logo/learning-and-development-logo.svg",
                 url: "https://www.sharefable.com/solutions/learning-and-development",
               },
-            ], 
+            ],
             banner: {
               title: "Customers are raving about us on G2!",
               heading: "Rated 4.9 on G2 & trusted by GTM teams across the world",
@@ -181,7 +210,7 @@ module.exports = {
               title: "Fable Untold",
               url: "https://www.sharefable.com/podcast/mastering-b2b-demand-generation",
             },
-           { title: "Help Center", url: "https://help.sharefable.com/Introduction/Welcome-to-Fable" },
+            { title: "Help Center", url: "https://help.sharefable.com/Introduction/Welcome-to-Fable" },
             { title: "E-Books", url: "https://www.sharefable.com/ebooks" },
             { title: "Fable Blog", url: "https://www.sharefable.com/blog" },
           ],
@@ -248,24 +277,24 @@ module.exports = {
       ],
       g2Badges: [
         {
-         source: 'https://web-git-add-g2-tags-share-fable.vercel.app/g2-badges/HighPerformer.svg',
-         name: 'High Performer',
+          source: 'https://web-git-add-g2-tags-share-fable.vercel.app/g2-badges/HighPerformer.svg',
+          name: 'High Performer',
         },
         {
-         source: 'https://web-git-add-g2-tags-share-fable.vercel.app/g2-badges/EasiestToUse.svg',
-         name: 'Easiest To Use',
+          source: 'https://web-git-add-g2-tags-share-fable.vercel.app/g2-badges/EasiestToUse.svg',
+          name: 'Easiest To Use',
         },
         {
-         source: 'https://web-git-add-g2-tags-share-fable.vercel.app/g2-badges/FastestImplementation.svg',
-         name: 'Fastest Implementation',
+          source: 'https://web-git-add-g2-tags-share-fable.vercel.app/g2-badges/FastestImplementation.svg',
+          name: 'Fastest Implementation',
         },
         {
-         source: 'https://web-git-add-g2-tags-share-fable.vercel.app/g2-badges/BestEstimatedROI.svg',
-         name: 'Best Estimated ROI',
+          source: 'https://web-git-add-g2-tags-share-fable.vercel.app/g2-badges/BestEstimatedROI.svg',
+          name: 'Best Estimated ROI',
         },
         {
-         source: 'https://web-git-add-g2-tags-share-fable.vercel.app/g2-badges/EasiestToDoBusinessWith.svg',
-         name: 'Easiest To Do Business With',
+          source: 'https://web-git-add-g2-tags-share-fable.vercel.app/g2-badges/EasiestToDoBusinessWith.svg',
+          name: 'Easiest To Do Business With',
         },
       ],
     },
