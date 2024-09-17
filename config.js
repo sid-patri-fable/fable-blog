@@ -27,13 +27,13 @@ module.exports = {
             sublinks: [
               {
                 title: "Interactive Demo",
-                subtitle: "Increase conversions from your existing funnel",
+                subtitle: "Engage prospects, close more deals & simplify onboarding with AI-powered demos.",
                 logo: "https://www.sharefable.com/logo/marketing-logo.svg",
                 url: "https://www.sharefable.com/products/interactive-demo",
               },
               {
                 title: "Demo Hub",
-                subtitle: "Create deal-winning demos every single time",
+                subtitle: "Organize, personalize, and share your interactive demos effortlessly.",
                 logo: "https://www.sharefable.com/logo/sales-logo.svg",
                 url: "https://www.sharefable.com/products/demo-hub",
               },
@@ -182,6 +182,23 @@ module.exports = {
       logo: "https://www.sharefable.com/fable_footer-logo.svg",
       copyright: "Fable © 2024",
       links: [
+        {
+          heading: "Product",
+          links: [
+            {
+              title: "Interactive Demo",
+              url: "https://www.sharefable.com/products/interactive-demo",
+            },
+            {
+              title: "Demo Hub",
+              url: "https://www.sharefable.com/products/demo-hub",
+            },
+            {
+              title: "Quilly",
+              url: "https://www.sharefable.com/products/quilly",
+            },
+          ],
+        },
         {
           heading: "Solutions",
           links: [
